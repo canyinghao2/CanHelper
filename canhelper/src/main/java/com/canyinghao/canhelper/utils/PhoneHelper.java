@@ -39,9 +39,9 @@ import java.util.regex.Pattern;
 
 /**
  * 与电话相关功能的工具类
- * 
+ *
  * @author canyinghao
- * 
+ *
  */
 public class PhoneHelper {
 	private Context context = CanHelper.getApp();
@@ -61,7 +61,7 @@ public class PhoneHelper {
 
 	/**
 	 * 生产商家
-	 * 
+	 *
 	 * @return
 	 */
 	public String getManufacturer() {
@@ -70,7 +70,7 @@ public class PhoneHelper {
 
 	/**
 	 * 获得固件版本
-	 * 
+	 *
 	 * @return
 	 */
 	public String getRelease() {
@@ -79,7 +79,7 @@ public class PhoneHelper {
 
 	/**
 	 * 获得手机型号
-	 * 
+	 *
 	 * @return
 	 */
 	public String getModel() {
@@ -88,7 +88,7 @@ public class PhoneHelper {
 
 	/**
 	 * 获得手机品牌
-	 * 
+	 *
 	 * @return
 	 */
 	public String getBrand() {
@@ -107,7 +107,7 @@ public class PhoneHelper {
 
 	/**
 	 * 得到本机手机号码,未安装SIM卡或者SIM卡中未写入手机号，都会获取不到
-	 * 
+	 *
 	 * @return
 	 */
 	public String getThisPhoneNumber() {
@@ -120,7 +120,7 @@ public class PhoneHelper {
 
 	/**
 	 * 是否是电话号码
-	 * 
+	 *
 	 * @param phonenumber
 	 * @return
 	 */
@@ -132,7 +132,7 @@ public class PhoneHelper {
 
 	/**
 	 * 打电话
-	 * 
+	 *
 	 * @param phone
 	 * @param
 	 */
@@ -144,7 +144,7 @@ public class PhoneHelper {
 
 	/**
 	 * 发短信
-	 * 
+	 *
 	 * @param phone
 	 * @param content
 	 * @param
@@ -161,7 +161,7 @@ public class PhoneHelper {
 	/**
 	 * 得到屏幕信息 getScreenDisplayMetrics().heightPixels 屏幕高
 	 * getScreenDisplayMetrics().widthPixels 屏幕宽
-	 * 
+	 *
 	 * @return
 	 */
 	public DisplayMetrics getScreenDisplayMetrics() {
@@ -178,7 +178,7 @@ public class PhoneHelper {
 
 	/**
 	 * 屏幕分辨率
-	 * 
+	 *
 	 * @param
 	 * @return
 	 */
@@ -190,7 +190,7 @@ public class PhoneHelper {
 
 	/**
 	 * 状态栏高度
-	 * 
+	 *
 	 * @param context
 	 * @return
 	 */
@@ -239,7 +239,7 @@ public class PhoneHelper {
 
 	/**
 	 * 是否安装了
-	 * 
+	 *
 	 * @param packageName
 	 * @return
 	 */
@@ -256,7 +256,7 @@ public class PhoneHelper {
 
 	/**
 	 * 检测网络是否可用
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isNetworkConnected() {
@@ -268,7 +268,7 @@ public class PhoneHelper {
 
 	/**
 	 * 将Toast放在屏幕上方
-	 * 
+	 *
 	 * @param message
 	 */
 	public void show(String message) {
@@ -280,7 +280,7 @@ public class PhoneHelper {
 
 	/**
 	 * 调用浏览器打开
-	 * 
+	 *
 	 * @param
 	 * @param url
 	 */
@@ -293,7 +293,7 @@ public class PhoneHelper {
 
 	/**
 	 * 是否有外存卡
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isExistExternalStore() {
@@ -307,7 +307,7 @@ public class PhoneHelper {
 
 	/**
 	 * 得到sd卡路径
-	 * 
+	 *
 	 * @return
 	 */
 	public String getExternalStorePath() {
@@ -319,7 +319,7 @@ public class PhoneHelper {
 
 	/**
 	 * 得到网络类型，0是未知或未连上网络，1为WIFI，2为2g，3为3g，4为4g
-	 * 
+	 *
 	 * @return
 	 */
 	public int getNetType() {
@@ -350,7 +350,7 @@ public class PhoneHelper {
 
 	/**
 	 * 判断数据连接的类型
-	 * 
+	 *
 	 * @param networkType
 	 * @return
 	 */
@@ -382,7 +382,7 @@ public class PhoneHelper {
 
 	/**
 	 * 开始震动
-	 * 
+	 *
 	 * @param context
 	 * @param repeat
 	 *            0重复 -1不重复
@@ -405,7 +405,7 @@ public class PhoneHelper {
 
 	/**
 	 * 建立一个NotificationCompat.Builder，并返回
-	 * 
+	 *
 	 * @param contentTitle
 	 * @param contentText
 	 * @param contentInfo
@@ -436,7 +436,7 @@ public class PhoneHelper {
 
 	/**
 	 * 建一个带有ProgressBar的NotificationCompat.Builder，并返回
-	 * 
+	 *
 	 * @param contentTitle
 	 * @param contentText
 	 * @param contentInfo
@@ -457,15 +457,15 @@ public class PhoneHelper {
 				contentInfo, largeIcon, smallIcon, contentclass,deleteIntent,defaults);
 
 		builder.setProgress(max, progress, indeterminate);
-				
-				
+
+
 		return builder;
 
 	}
 
 	/**
 	 * 普通的Notification
-	 * 
+	 *
 	 * @param builder
 	 * @param notifyId
 	 */
@@ -481,7 +481,7 @@ public class PhoneHelper {
 
 	/**
 	 * 大布局Notification
-	 * 
+	 *
 	 * @param style
 	 * @param builder
 	 * @param notifyId
@@ -499,7 +499,7 @@ public class PhoneHelper {
 
 	/**
 	 * BigTextStyle风格的Notification
-	 * 
+	 *
 	 * @param bigContentTitle
 	 * @param summaryText
 	 * @param bigText
@@ -517,7 +517,7 @@ public class PhoneHelper {
 
 	/**
 	 * BigPictureStyle风格的Notification
-	 * 
+	 *
 	 * @param bigContentTitle
 	 * @param summaryText
 	 * @param bigPicture
@@ -535,7 +535,7 @@ public class PhoneHelper {
 
 	/**
 	 * InboxStyle风格的Notification
-	 * 
+	 *
 	 * @param bigContentTitle
 	 * @param summaryText
 	 * @param line
@@ -557,7 +557,7 @@ public class PhoneHelper {
 
 	/**
 	 * 自定义Notification
-	 * 
+	 *
 	 * @param layoutId
 	 * @param contentclass
 	 * @param smallIcon
@@ -622,5 +622,27 @@ public class PhoneHelper {
         return version;
     }
 
+		/**
+     * 判断manifest里面是否有某项权限
+     * @param permission
+     */
+		public  boolean isPermission(String permission) {
+
+			PackageManager pkm = context.getPackageManager();
+
+			boolean has_permission = (PackageManager.PERMISSION_GRANTED == pkm
+					.checkPermission(permission,
+							context.getPackageName()));
+
+
+			if (has_permission) {
+
+						return true;
+			} else {
+				return false;
+
+			}
+
+		}
 
 }
